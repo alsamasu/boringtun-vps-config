@@ -48,8 +48,8 @@ We need to build boringtun from trunk as of 20190422. This may change, at which 
 ```bash
 git clone https://github.com/cloudflare/boringtun.git
 cd boringtun
-cargo build --bin boringtun --release
-cargo install --path .
+cargo build --bin boringtun-cli --release
+cargo install --path ./boringtun-cli
 ```
 
 ### Allow boringtun to TUN
