@@ -55,7 +55,7 @@ cargo install --path ./boringtun-cli
 ### Allow boringtun to TUN
 
 ```bash
-setcap cap_net_admin+epi boringtun
+setcap cap_net_admin+epi /root/.cargo/bin/boringtun-cli
 ```
 
 Interestingly this isn't enough to get it to work on OpenVZ. If you look at the systemd script, you need `--disable-multi-queue` as well.
